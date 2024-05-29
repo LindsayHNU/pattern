@@ -1,0 +1,67 @@
+gyx@gyx-virtual-machine:~/Desktop$ cd ./autoplait
+gyx@gyx-virtual-machine:~/Desktop/autoplait$ bash demo.sh
+rm -rf core *.o *~ autoplait  ./_out/dat_tmp/
+gcc -g   -c -o autoplait.o autoplait.c
+gcc -g   -c -o plait.o plait.c
+gcc -g   -c -o cps.o cps.c
+gcc -g   -c -o tool.o tool.c
+gcc -g   -c -o nrutil.o nrutil.c
+gcc -g   -c -o viterbi.o viterbi.c
+gcc -g   -c -o hmmutils.o hmmutils.c
+gcc -g   -c -o baum.o baum.c
+gcc -g   -c -o forbackward.o forbackward.c
+gcc -g   -c -o kmeans.o kmeans.c
+gcc -g   -c -o segbox.o segbox.c
+gcc -o autoplait \
+autoplait.o plait.o cps.o tool.o nrutil.o \
+viterbi.o hmmutils.o \
+baum.o forbackward.o kmeans.o segbox.o \
+-lm
+----------------------
+mocap and googleTrend
+----------------------
+mkdir: cannot create directory ‘./_out/Techr2’: File exists
+mkdir: cannot create directory ‘./_out/Techr2/dat1/’: File exists
+loading...
+load dataset... 
+file: ./Temp2019/ech_txt/51G.txt (len=8760)
+duration:  8760
+dimension: 3
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 55150 
+2 3 47144 
+3 4 46320 
+3 4 46320 
+3 4 46320 
+4 4 41868 
+5 6 38539 
+6 7 38135 
+6 7 38135 
+6 7 38135 
+7 19 37500 
+7 19 37500 
+7 19 37500 
+8 20 34442 
+9 21 34197 
+9 21 34197 
+9 21 34197 
+10 22 33430 
+11 23 32621 
+11 23 32621 
+11 23 32621 
+11 23 32621 
+==================================
+duration: 8760
+search time: 31.99807900 sec.
+total patterns: 11 
+total segments: 23 
+total cost: 32621 
+==================================
+gyx@gyx-virtual-machine:~/Desktop/autoplait$ 
+
