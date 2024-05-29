@@ -1,0 +1,417 @@
+gyx@gyx-virtual-machine:~/Desktop$ cd ./autoplait
+gyx@gyx-virtual-machine:~/Desktop/autoplait$ bash demo.sh
+rm -rf core *.o *~ autoplait  ./_out/dat_tmp/
+gcc -g   -c -o autoplait.o autoplait.c
+gcc -g   -c -o plait.o plait.c
+gcc -g   -c -o cps.o cps.c
+gcc -g   -c -o tool.o tool.c
+gcc -g   -c -o nrutil.o nrutil.c
+gcc -g   -c -o viterbi.o viterbi.c
+gcc -g   -c -o hmmutils.o hmmutils.c
+gcc -g   -c -o baum.o baum.c
+gcc -g   -c -o forbackward.o forbackward.c
+gcc -g   -c -o kmeans.o kmeans.c
+gcc -g   -c -o segbox.o segbox.c
+gcc -o autoplait \
+autoplait.o plait.o cps.o tool.o nrutil.o \
+viterbi.o hmmutils.o \
+baum.o forbackward.o kmeans.o segbox.o \
+-lm
+----------------------
+mocap and googleTrend
+----------------------
+loading...
+load dataset... 
+file: ./Poly2019/ec_txt/505.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 28226 
+2 3 24384 
+3 5 23184 
+4 7 22611 
+5 25 22662 
+5 25 22662 
+6 27 22523 
+6 27 22523 
+7 31 22816 
+7 31 22816 
+7 31 22816 
+7 31 22816 
+7 31 22816 
+8 33 22146 
+9 43 22357 
+10 48 22746 
+10 48 22746 
+10 48 22746 
+10 48 22746 
+10 48 22746 
+==================================
+duration: 8760
+search time: 80.12885500 sec.
+total patterns: 10 
+total segments: 48 
+total cost: 22746 
+==================================
+loading...
+load dataset... 
+file: ./Poly2019/ec_txt/571.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 36119 
+2 5 28229 
+3 8 27051 
+4 9 26535 
+4 9 26535 
+5 12 26151 
+5 12 26151 
+6 12 26360 
+6 12 26360 
+6 12 26360 
+6 12 26360 
+7 15 25071 
+7 15 25071 
+7 15 25071 
+==================================
+duration: 8760
+search time: 65.11301800 sec.
+total patterns: 7 
+total segments: 15 
+total cost: 25071 
+==================================
+loading...
+load dataset... 
+file: ./Poly2019/ec_txt/632.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 33688 
+2 3 29962 
+3 5 28457 
+4 5 27952 
+5 6 27970 
+6 8 27784 
+6 8 27784 
+6 8 27784 
+6 8 27784 
+7 9 28120 
+7 9 28120 
+7 9 28120 
+7 9 28120 
+7 9 28120 
+==================================
+duration: 8760
+search time: 64.29410600 sec.
+total patterns: 7 
+total segments: 9 
+total cost: 28120 
+==================================
+loading...
+load dataset... 
+file: ./Poly2019/ec_txt/640.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 30538 
+2 3 25639 
+3 4 25059 
+3 4 25059 
+4 6 24579 
+4 6 24579 
+4 6 24579 
+4 6 24579 
+==================================
+duration: 8760
+search time: 75.79969600 sec.
+total patterns: 4 
+total segments: 6 
+total cost: 24579 
+==================================
+loading...
+load dataset... 
+file: ./Poly2019/ec_txt/790.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 34576 
+2 5 28156 
+3 7 25686 
+3 7 25686 
+4 7 24998 
+5 12 23778 
+6 13 23949 
+7 27 24076 
+7 27 24076 
+7 27 24076 
+8 29 24484 
+8 29 24484 
+8 29 24484 
+8 29 24484 
+8 29 24484 
+9 31 24049 
+10 32 23843 
+11 33 24403 
+11 33 24403 
+11 33 24403 
+11 33 24403 
+11 33 24403 
+==================================
+duration: 8760
+search time: 64.36640100 sec.
+total patterns: 11 
+total segments: 33 
+total cost: 24403 
+==================================
+loading...
+load dataset... 
+file: ./Poly2019/ec_txt/795.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 32480 
+2 5 27950 
+3 7 26580 
+4 27 26617 
+4 27 26617 
+4 27 26617 
+5 51 26584 
+6 56 26312 
+7 60 26575 
+7 60 26575 
+7 60 26575 
+8 60 26869 
+8 60 26869 
+8 60 26869 
+8 60 26869 
+9 61 27212 
+9 61 27212 
+9 61 27212 
+==================================
+duration: 8760
+search time: 70.81907700 sec.
+total patterns: 9 
+total segments: 61 
+total cost: 27212 
+==================================
+loading...
+load dataset... 
+file: ./Poly2019/ec_txt/825A.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 35319 
+2 3 26109 
+3 5 24302 
+4 21 23830 
+5 36 24074 
+6 40 24390 
+6 40 24390 
+6 40 24390 
+7 47 24151 
+7 47 24151 
+7 47 24151 
+7 47 24151 
+7 47 24151 
+8 51 24310 
+8 51 24310 
+8 51 24310 
+==================================
+duration: 8760
+search time: 68.32387200 sec.
+total patterns: 8 
+total segments: 51 
+total cost: 24310 
+==================================
+loading...
+load dataset... 
+file: ./Poly2019/ec_txt/826.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 34199 
+2 5 26020 
+3 6 25348 
+4 8 25082 
+4 8 25082 
+4 8 25082 
+4 8 25082 
+5 10 24499 
+5 10 24499 
+6 13 24290 
+7 13 24508 
+7 13 24508 
+8 13 24711 
+8 13 24711 
+8 13 24711 
+8 13 24711 
+==================================
+duration: 8760
+search time: 73.45639500 sec.
+total patterns: 8 
+total segments: 13 
+total cost: 24711 
+==================================
+loading...
+load dataset... 
+file: ./Poly2019/ec_txt/827A.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 30924 
+2 5 24236 
+3 6 23423 
+3 6 23423 
+4 7 21943 
+5 31 22017 
+5 31 22017 
+6 42 21155 
+7 48 21248 
+7 48 21248 
+7 48 21248 
+8 95 21753 
+8 95 21753 
+8 95 21753 
+8 95 21753 
+9 100 22158 
+9 100 22158 
+9 100 22158 
+==================================
+duration: 8760
+search time: 78.90604400 sec.
+total patterns: 9 
+total segments: 100 
+total cost: 22158 
+==================================
+loading...
+load dataset... 
+file: ./Poly2019/ec_txt/831.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 35471 
+2 3 29749 
+3 5 28146 
+4 6 28085 
+4 6 28085 
+4 6 28085 
+5 7 28310 
+5 7 28310 
+5 7 28310 
+6 8 27993 
+6 8 27993 
+6 8 27993 
+==================================
+duration: 8760
+search time: 80.17871100 sec.
+total patterns: 6 
+total segments: 8 
+total cost: 27993 
+==================================
+loading...
+load dataset... 
+file: ./Poly2019/ec_txt/832.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 33100 
+2 3 25197 
+3 5 22458 
+4 6 22648 
+4 6 22648 
+4 6 22648 
+5 7 22120 
+5 7 22120 
+6 10 22132 
+6 10 22132 
+7 10 22535 
+7 10 22535 
+7 10 22535 
+8 12 21638 
+9 14 21093 
+10 15 21439 
+11 15 22029 
+11 15 22029 
+11 15 22029 
+11 15 22029 
+11 15 22029 
+12 19 22305 
+12 19 22305 
+13 32 23007 
+13 32 23007 
+13 32 23007 
+==================================
+duration: 8760
+search time: 53.24014600 sec.
+total patterns: 13 
+total segments: 32 
+total cost: 23007 
+==================================
+gyx@gyx-virtual-machine:~/Desktop/autoplait$ 
+
