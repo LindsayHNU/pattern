@@ -1,0 +1,726 @@
+gyx@gyx-virtual-machine:~/Desktop$ cd ./autoplait
+gyx@gyx-virtual-machine:~/Desktop/autoplait$ bash demo.sh
+rm -rf core *.o *~ autoplait  ./_out/dat_tmp/
+gcc -g   -c -o autoplait.o autoplait.c
+gcc -g   -c -o plait.o plait.c
+gcc -g   -c -o cps.o cps.c
+gcc -g   -c -o tool.o tool.c
+gcc -g   -c -o nrutil.o nrutil.c
+gcc -g   -c -o viterbi.o viterbi.c
+gcc -g   -c -o hmmutils.o hmmutils.c
+gcc -g   -c -o baum.o baum.c
+gcc -g   -c -o forbackward.o forbackward.c
+gcc -g   -c -o kmeans.o kmeans.c
+gcc -g   -c -o segbox.o segbox.c
+gcc -o autoplait \
+autoplait.o plait.o cps.o tool.o nrutil.o \
+viterbi.o hmmutils.o \
+baum.o forbackward.o kmeans.o segbox.o \
+-lm
+----------------------
+mocap and googleTrend
+----------------------
+loading...
+load dataset... 
+file: ./Temp2019/ec_txt/10E.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 36120 
+2 5 29152 
+2 5 29152 
+3 7 25821 
+4 10 25892 
+4 10 25892 
+4 10 25892 
+5 13 25201 
+5 13 25201 
+6 15 24610 
+7 16 24822 
+7 16 24822 
+7 16 24822 
+7 16 24822 
+==================================
+duration: 8760
+search time: 15.26852700 sec.
+total patterns: 7 
+total segments: 16 
+total cost: 24822 
+==================================
+loading...
+load dataset... 
+file: ./Temp2019/ec_txt/11.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 33118 
+2 5 25924 
+3 6 21812 
+4 7 21970 
+4 7 21970 
+4 7 21970 
+5 10 21967 
+5 10 21967 
+5 10 21967 
+6 11 21938 
+6 11 21938 
+6 11 21938 
+==================================
+duration: 8760
+search time: 14.20582800 sec.
+total patterns: 6 
+total segments: 11 
+total cost: 21938 
+==================================
+loading...
+load dataset... 
+file: ./Temp2019/ec_txt/11R.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 36118 
+2 3 30438 
+3 4 28439 
+4 19 28326 
+4 19 28326 
+4 19 28326 
+4 19 28326 
+5 20 28204 
+5 20 28204 
+5 20 28204 
+==================================
+duration: 8760
+search time: 22.14030700 sec.
+total patterns: 5 
+total segments: 20 
+total cost: 28204 
+==================================
+loading...
+load dataset... 
+file: ./Temp2019/ec_txt/14A.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 30771 
+2 3 23361 
+3 7 20637 
+4 7 20086 
+5 9 19341 
+5 9 19341 
+5 9 19341 
+5 9 19341 
+6 10 19419 
+7 11 19708 
+7 11 19708 
+7 11 19708 
+7 11 19708 
+8 13 15118 
+9 15 13019 
+10 16 13565 
+10 16 13565 
+10 16 13565 
+11 19 14062 
+12 23 14698 
+12 23 14698 
+12 23 14698 
+12 23 14698 
+12 23 14698 
+==================================
+duration: 8760
+search time: 18.48673800 sec.
+total patterns: 12 
+total segments: 23 
+total cost: 14698 
+==================================
+loading...
+load dataset... 
+file: ./Temp2019/ec_txt/162.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 36120 
+2 5 29522 
+3 7 29176 
+3 7 29176 
+4 8 28822 
+4 8 28822 
+4 8 28822 
+5 10 26106 
+6 11 23234 
+7 13 23408 
+7 13 23408 
+7 13 23408 
+7 13 23408 
+8 14 22373 
+9 16 22786 
+9 16 22786 
+9 16 22786 
+9 16 22786 
+==================================
+duration: 8760
+search time: 17.34669100 sec.
+total patterns: 9 
+total segments: 16 
+total cost: 22786 
+==================================
+loading...
+load dataset... 
+file: ./Temp2019/ec_txt/162A.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 36120 
+2 3 27457 
+3 5 25753 
+4 8 25794 
+4 8 25794 
+5 9 25998 
+5 9 25998 
+5 9 25998 
+5 9 25998 
+6 11 21903 
+7 13 21446 
+8 16 21382 
+8 16 21382 
+8 16 21382 
+8 16 21382 
+9 17 20889 
+10 18 21467 
+10 18 21467 
+10 18 21467 
+11 19 21439 
+11 19 21439 
+11 19 21439 
+==================================
+duration: 8760
+search time: 18.02626300 sec.
+total patterns: 11 
+total segments: 19 
+total cost: 21439 
+==================================
+loading...
+load dataset... 
+file: ./Temp2019/ec_txt/162D.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 36120 
+2 5 30251 
+3 8 28780 
+3 8 28780 
+3 8 28780 
+4 12 26708 
+5 13 25821 
+6 19 26098 
+6 19 26098 
+6 19 26098 
+7 20 26354 
+7 20 26354 
+7 20 26354 
+8 21 26277 
+8 21 26277 
+8 21 26277 
+==================================
+duration: 8760
+search time: 24.39364400 sec.
+total patterns: 8 
+total segments: 21 
+total cost: 26277 
+==================================
+loading...
+load dataset... 
+file: ./Temp2019/ec_txt/169.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 33933 
+2 2 32136 
+3 3 31721 
+3 3 31721 
+3 3 31721 
+4 6 29626 
+5 7 29546 
+5 7 29546 
+6 7 29811 
+6 7 29811 
+6 7 29811 
+7 8 29967 
+7 8 29967 
+7 8 29967 
+==================================
+duration: 8760
+search time: 27.50842200 sec.
+total patterns: 7 
+total segments: 8 
+total cost: 29967 
+==================================
+loading...
+load dataset... 
+file: ./Temp2019/ec_txt/178.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 36119 
+2 3 30155 
+3 5 28912 
+3 5 28912 
+3 5 28912 
+3 5 28912 
+==================================
+duration: 8760
+search time: 26.19479800 sec.
+total patterns: 3 
+total segments: 5 
+total cost: 28912 
+==================================
+loading...
+load dataset... 
+file: ./Temp2019/ec_txt/181.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 21922 
+2 5 17699 
+3 7 17638 
+3 7 17638 
+3 7 17638 
+4 10 15294 
+4 10 15294 
+4 10 15294 
+==================================
+duration: 8760
+search time: 17.89985500 sec.
+total patterns: 4 
+total segments: 10 
+total cost: 15294 
+==================================
+loading...
+load dataset... 
+file: ./Temp2019/ec_txt/21.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 27076 
+2 3 26421 
+2 3 26421 
+3 4 23592 
+3 4 23592 
+3 4 23592 
+==================================
+duration: 8760
+search time: 26.99853300 sec.
+total patterns: 3 
+total segments: 4 
+total cost: 23592 
+==================================
+loading...
+load dataset... 
+file: ./Temp2019/ec_txt/2_3.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 34628 
+2 2 26580 
+3 3 22274 
+4 4 19911 
+5 5 19977 
+5 5 19977 
+5 5 19977 
+6 6 20171 
+6 6 20171 
+7 7 20522 
+7 7 20522 
+7 7 20522 
+8 8 20855 
+8 8 20855 
+8 8 20855 
+9 10 21024 
+9 10 21024 
+9 10 21024 
+==================================
+duration: 8760
+search time: 16.07801800 sec.
+total patterns: 9 
+total segments: 10 
+total cost: 21024 
+==================================
+loading...
+load dataset... 
+file: ./Temp2019/ec_txt/31.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 35520 
+2 4 30966 
+2 4 30966 
+3 4 30746 
+3 4 30746 
+3 4 30746 
+==================================
+duration: 8760
+search time: 14.60767500 sec.
+total patterns: 3 
+total segments: 4 
+total cost: 30746 
+==================================
+loading...
+load dataset... 
+file: ./Temp2019/ec_txt/40C.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 34748 
+2 3 29936 
+3 5 26938 
+4 5 26837 
+4 5 26837 
+4 5 26837 
+5 7 26175 
+6 8 26401 
+6 8 26401 
+7 10 26719 
+7 10 26719 
+7 10 26719 
+7 10 26719 
+8 11 26330 
+9 12 26619 
+9 12 26619 
+9 12 26619 
+10 13 26888 
+10 13 26888 
+10 13 26888 
+==================================
+duration: 8760
+search time: 23.63639100 sec.
+total patterns: 10 
+total segments: 13 
+total cost: 26888 
+==================================
+loading...
+load dataset... 
+file: ./Temp2019/ec_txt/40D.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 33372 
+2 3 25130 
+3 5 23114 
+4 6 23189 
+5 6 23411 
+5 6 23411 
+5 6 23411 
+5 6 23411 
+5 6 23411 
+6 7 23331 
+6 7 23331 
+7 9 23693 
+7 9 23693 
+7 9 23693 
+==================================
+duration: 8760
+search time: 22.71298200 sec.
+total patterns: 7 
+total segments: 9 
+total cost: 23693 
+==================================
+loading...
+load dataset... 
+file: ./Temp2019/ec_txt/42.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 33703 
+2 5 25680 
+3 9 23056 
+3 9 23056 
+4 11 22854 
+4 11 22854 
+4 11 22854 
+5 11 22773 
+5 11 22773 
+5 11 22773 
+==================================
+duration: 8760
+search time: 29.84290100 sec.
+total patterns: 5 
+total segments: 11 
+total cost: 22773 
+==================================
+loading...
+load dataset... 
+file: ./Temp2019/ec_txt/45.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 33480 
+2 3 27773 
+3 7 26138 
+3 7 26138 
+4 19 26114 
+4 19 26114 
+4 19 26114 
+4 19 26114 
+==================================
+duration: 8760
+search time: 20.69057000 sec.
+total patterns: 4 
+total segments: 19 
+total cost: 26114 
+==================================
+loading...
+load dataset... 
+file: ./Temp2019/ec_txt/47.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 35199 
+2 3 30061 
+3 5 29440 
+4 14 29338 
+5 18 29457 
+5 18 29457 
+5 18 29457 
+6 25 29462 
+7 37 29729 
+7 37 29729 
+7 37 29729 
+8 44 29712 
+8 44 29712 
+8 44 29712 
+8 44 29712 
+9 46 29574 
+9 46 29574 
+10 47 29193 
+11 48 29757 
+11 48 29757 
+11 48 29757 
+11 48 29757 
+==================================
+duration: 8760
+search time: 25.97306400 sec.
+total patterns: 11 
+total segments: 48 
+total cost: 29757 
+==================================
+loading...
+load dataset... 
+file: ./Temp2019/ec_txt/69.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 36066 
+2 3 31887 
+3 12 29111 
+4 12 28531 
+5 13 28575 
+6 15 28444 
+6 15 28444 
+6 15 28444 
+6 15 28444 
+7 15 28755 
+7 15 28755 
+7 15 28755 
+7 15 28755 
+8 18 27866 
+9 19 28196 
+9 19 28196 
+9 19 28196 
+10 22 28596 
+11 25 29211 
+11 25 29211 
+11 25 29211 
+11 25 29211 
+==================================
+duration: 8760
+search time: 28.94639200 sec.
+total patterns: 11 
+total segments: 25 
+total cost: 29211 
+==================================
+loading...
+load dataset... 
+file: ./Temp2019/ec_txt/7.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 36119 
+2 2 33687 
+3 4 29391 
+4 5 27858 
+4 5 27858 
+4 5 27858 
+5 7 25536 
+6 7 25257 
+6 7 25257 
+7 8 25120 
+7 8 25120 
+7 8 25120 
+8 8 25465 
+8 8 25465 
+8 8 25465 
+8 8 25465 
+==================================
+duration: 8760
+search time: 31.36048200 sec.
+total patterns: 8 
+total segments: 8 
+total cost: 25465 
+==================================
+loading...
+load dataset... 
+file: ./Temp2019/ec_txt/9.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 33923 
+2 5 25641 
+3 6 24483 
+4 9 23548 
+4 9 23548 
+5 10 23390 
+5 10 23390 
+5 10 23390 
+6 15 23680 
+6 15 23680 
+6 15 23680 
+7 16 23017 
+8 16 23416 
+8 16 23416 
+8 16 23416 
+9 23 23880 
+9 23 23880 
+9 23 23880 
+==================================
+duration: 8760
+search time: 17.95248400 sec.
+total patterns: 9 
+total segments: 23 
+total cost: 23880 
+==================================
+
