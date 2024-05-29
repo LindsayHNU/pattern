@@ -1,0 +1,9 @@
+./West2019/ec_txt/900.txt
+./West2019/ec_txt/901.txt
+./West2019/ec_txt/903.txt
+./West2019/ec_txt/904.txt
+./West2019/ec_txt/905A.txt
+./West2019/ec_txt/905B.txt
+./West2019/ec_txt/906.txt
+./West2019/ec_txt/915.txt
+./West2019/ec_txt/917.txt
