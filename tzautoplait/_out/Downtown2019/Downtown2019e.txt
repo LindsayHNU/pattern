@@ -1,0 +1,269 @@
+gyx@gyx-virtual-machine:~/Desktop$ cd ./autoplait
+gyx@gyx-virtual-machine:~/Desktop/autoplait$ bash demo.sh
+rm -rf core *.o *~ autoplait  ./_out/dat_tmp/
+gcc -g   -c -o autoplait.o autoplait.c
+gcc -g   -c -o plait.o plait.c
+gcc -g   -c -o cps.o cps.c
+gcc -g   -c -o tool.o tool.c
+gcc -g   -c -o nrutil.o nrutil.c
+gcc -g   -c -o viterbi.o viterbi.c
+gcc -g   -c -o hmmutils.o hmmutils.c
+gcc -g   -c -o baum.o baum.c
+gcc -g   -c -o forbackward.o forbackward.c
+gcc -g   -c -o kmeans.o kmeans.c
+gcc -g   -c -o segbox.o segbox.c
+gcc -o autoplait \
+autoplait.o plait.o cps.o tool.o nrutil.o \
+viterbi.o hmmutils.o \
+baum.o forbackward.o kmeans.o segbox.o \
+-lm
+----------------------
+mocap and googleTrend
+----------------------
+loading...
+load dataset... 
+file: ./Downtown2019/e_txt/152A.txt (len=8760)
+duration:  8760
+dimension: 1
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 18123 
+2 7 13652 
+3 22 13684 
+3 22 13684 
+3 22 13684 
+4 59 13160 
+4 59 13160 
+4 59 13160 
+==================================
+duration: 8760
+search time: 29.29647700 sec.
+total patterns: 4 
+total segments: 59 
+total cost: 13160 
+==================================
+loading...
+load dataset... 
+file: ./Downtown2019/e_txt/152B.txt (len=8760)
+duration:  8760
+dimension: 1
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 18122 
+2 5 14730 
+3 16 14312 
+3 16 14312 
+3 16 14312 
+4 20 13093 
+5 34 13205 
+6 35 13340 
+6 35 13340 
+6 35 13340 
+6 35 13340 
+6 35 13340 
+==================================
+duration: 8760
+search time: 35.11445000 sec.
+total patterns: 6 
+total segments: 35 
+total cost: 13340 
+==================================
+loading...
+load dataset... 
+file: ./Downtown2019/e_txt/152C.txt (len=8760)
+duration:  8760
+dimension: 1
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 18122 
+2 5 14706 
+3 7 14348 
+3 7 14348 
+3 7 14348 
+4 11 14380 
+4 11 14380 
+4 11 14380 
+==================================
+duration: 8760
+search time: 34.03174200 sec.
+total patterns: 4 
+total segments: 11 
+total cost: 14380 
+==================================
+loading...
+load dataset... 
+file: ./Downtown2019/e_txt/152D.txt (len=8760)
+duration:  8760
+dimension: 1
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 18123 
+2 3 12718 
+3 5 12342 
+3 5 12342 
+3 5 12342 
+4 6 12354 
+4 6 12354 
+5 9 12430 
+5 9 12430 
+5 9 12430 
+==================================
+duration: 8760
+search time: 27.53885900 sec.
+total patterns: 5 
+total segments: 9 
+total cost: 12430 
+==================================
+loading...
+load dataset... 
+file: ./Downtown2019/e_txt/152E.txt (len=8760)
+duration:  8760
+dimension: 1
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 18123 
+2 5 12627 
+3 6 12377 
+3 6 12377 
+3 6 12377 
+4 7 12517 
+4 7 12517 
+4 7 12517 
+==================================
+duration: 8760
+search time: 29.09478000 sec.
+total patterns: 4 
+total segments: 7 
+total cost: 12517 
+==================================
+loading...
+load dataset... 
+file: ./Downtown2019/e_txt/152F.txt (len=8760)
+duration:  8760
+dimension: 1
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 18123 
+2 3 13314 
+3 4 13304 
+3 4 13304 
+3 4 13304 
+4 7 12859 
+4 7 12859 
+5 17 12866 
+5 17 12866 
+5 17 12866 
+==================================
+duration: 8760
+search time: 37.04325000 sec.
+total patterns: 5 
+total segments: 17 
+total cost: 12866 
+==================================
+loading...
+load dataset... 
+file: ./Downtown2019/e_txt/302.txt (len=8760)
+duration:  8760
+dimension: 1
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 18123 
+2 3 17544 
+2 3 17544 
+2 3 17544 
+==================================
+duration: 8760
+search time: 37.46742300 sec.
+total patterns: 2 
+total segments: 3 
+total cost: 17544 
+==================================
+loading...
+load dataset... 
+file: ./Downtown2019/e_txt/307.txt (len=8760)
+duration:  8760
+dimension: 1
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 18123 
+2 3 17103 
+2 3 17103 
+3 6 16783 
+3 6 16783 
+3 6 16783 
+==================================
+duration: 8760
+search time: 34.28243900 sec.
+total patterns: 3 
+total segments: 6 
+total cost: 16783 
+==================================
+loading...
+load dataset... 
+file: ./Downtown2019/e_txt/308.txt (len=8760)
+duration:  8760
+dimension: 1
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 18123 
+2 3 14965 
+3 5 14145 
+3 5 14145 
+3 5 14145 
+4 6 14200 
+4 6 14200 
+4 6 14200 
+==================================
+duration: 8760
+search time: 24.30314500 sec.
+total patterns: 4 
+total segments: 6 
+total cost: 14200 
+==================================
+gyx@gyx-virtual-machine:~/Desktop/autoplait$ 
+
