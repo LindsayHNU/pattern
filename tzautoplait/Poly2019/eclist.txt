@@ -1,0 +1,11 @@
+./Poly2019/ec_txt/505.txt
+./Poly2019/ec_txt/571.txt
+./Poly2019/ec_txt/632.txt
+./Poly2019/ec_txt/640.txt
+./Poly2019/ec_txt/790.txt
+./Poly2019/ec_txt/795.txt
+./Poly2019/ec_txt/825A.txt
+./Poly2019/ec_txt/826.txt
+./Poly2019/ec_txt/827A.txt
+./Poly2019/ec_txt/831.txt
+./Poly2019/ec_txt/832.txt
