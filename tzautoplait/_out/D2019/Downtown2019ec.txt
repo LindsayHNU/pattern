@@ -1,0 +1,90 @@
+gyx@gyx-virtual-machine:~/Desktop$ cd ./autoplait
+gyx@gyx-virtual-machine:~/Desktop/autoplait$ bash demo.sh
+rm -rf core *.o *~ autoplait  ./_out/dat_tmp/
+gcc -g   -c -o autoplait.o autoplait.c
+gcc -g   -c -o plait.o plait.c
+gcc -g   -c -o cps.o cps.c
+gcc -g   -c -o tool.o tool.c
+gcc -g   -c -o nrutil.o nrutil.c
+gcc -g   -c -o viterbi.o viterbi.c
+gcc -g   -c -o hmmutils.o hmmutils.c
+gcc -g   -c -o baum.o baum.c
+gcc -g   -c -o forbackward.o forbackward.c
+gcc -g   -c -o kmeans.o kmeans.c
+gcc -g   -c -o segbox.o segbox.c
+gcc -o autoplait \
+autoplait.o plait.o cps.o tool.o nrutil.o \
+viterbi.o hmmutils.o \
+baum.o forbackward.o kmeans.o segbox.o \
+-lm
+----------------------
+mocap and googleTrend
+----------------------
+loading...
+load dataset... 
+file: ./Downtown2019/ec_txt/304.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 35654 
+2 5 27819 
+3 6 26863 
+4 7 26446 
+5 8 26309 
+5 8 26309 
+5 8 26309 
+5 8 26309 
+5 8 26309 
+6 10 25662 
+6 10 25662 
+6 10 25662 
+==================================
+duration: 8760
+search time: 17.33424300 sec.
+total patterns: 6 
+total segments: 10 
+total cost: 25662 
+==================================
+loading...
+load dataset... 
+file: ./Downtown2019/ec_txt/305.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 36094 
+2 3 30190 
+3 5 29898 
+3 5 29898 
+3 5 29898 
+4 7 28567 
+5 8 28100 
+6 9 28042 
+7 11 28410 
+7 11 28410 
+7 11 28410 
+7 11 28410 
+7 11 28410 
+8 12 28731 
+8 12 28731 
+8 12 28731 
+==================================
+duration: 8760
+search time: 16.44176800 sec.
+total patterns: 8 
+total segments: 12 
+total cost: 28731 
+==================================
+gyx@gyx-virtual-machine:~/Desktop/autoplait$ 
+
