@@ -1,0 +1,159 @@
+gyx@gyx-virtual-machine:~/Desktop$ cd ./autoplait
+gyx@gyx-virtual-machine:~/Desktop/autoplait$ bash demo.sh
+rm -rf core *.o *~ autoplait  ./_out/dat_tmp/
+gcc -g   -c -o autoplait.o autoplait.c
+gcc -g   -c -o plait.o plait.c
+gcc -g   -c -o cps.o cps.c
+gcc -g   -c -o tool.o tool.c
+gcc -g   -c -o nrutil.o nrutil.c
+gcc -g   -c -o viterbi.o viterbi.c
+gcc -g   -c -o hmmutils.o hmmutils.c
+gcc -g   -c -o baum.o baum.c
+gcc -g   -c -o forbackward.o forbackward.c
+gcc -g   -c -o kmeans.o kmeans.c
+gcc -g   -c -o segbox.o segbox.c
+gcc -o autoplait \
+autoplait.o plait.o cps.o tool.o nrutil.o \
+viterbi.o hmmutils.o \
+baum.o forbackward.o kmeans.o segbox.o \
+-lm
+----------------------
+mocap and googleTrend
+----------------------
+loading...
+load dataset... 
+file: ./Temp2019/e_txt/173AN-1.txt (len=8760)
+duration:  8760
+dimension: 1
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 16318 
+2 2 6334 
+2 2 6334 
+2 2 6334 
+==================================
+duration: 8760
+search time: 6.53906900 sec.
+total patterns: 2 
+total segments: 2 
+total cost: 6334 
+==================================
+loading...
+load dataset... 
+file: ./Temp2019/e_txt/179.txt (len=8760)
+duration:  8760
+dimension: 1
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 18123 
+2 3 16439 
+2 3 16439 
+3 5 16069 
+3 5 16069 
+3 5 16069 
+==================================
+duration: 8760
+search time: 16.11513700 sec.
+total patterns: 3 
+total segments: 5 
+total cost: 16069 
+==================================
+loading...
+load dataset... 
+file: ./Temp2019/e_txt/180C.txt (len=8760)
+duration:  8760
+dimension: 1
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 17335 
+2 2 8622 
+3 8 6192 
+4 28 6211 
+4 28 6211 
+4 28 6211 
+5 30 6273 
+5 30 6273 
+5 30 6273 
+5 30 6273 
+==================================
+duration: 8760
+search time: 18.62366800 sec.
+total patterns: 5 
+total segments: 30 
+total cost: 6273 
+==================================
+loading...
+load dataset... 
+file: ./Temp2019/e_txt/59.txt (len=8760)
+duration:  8760
+dimension: 1
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 13954 
+2 3 8940 
+2 3 8940 
+3 8 3675 
+4 24 3801 
+4 24 3801 
+4 24 3801 
+4 24 3801 
+==================================
+duration: 8760
+search time: 15.82194100 sec.
+total patterns: 4 
+total segments: 24 
+total cost: 3801 
+==================================
+loading...
+load dataset... 
+file: ./Temp2019/e_txt/66.txt (len=8760)
+duration:  8760
+dimension: 1
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 18123 
+2 7 12515 
+3 19 11905 
+4 34 11974 
+4 34 11974 
+4 34 11974 
+4 34 11974 
+5 37 10953 
+6 38 11188 
+6 38 11188 
+6 38 11188 
+6 38 11188 
+==================================
+duration: 8760
+search time: 19.33821600 sec.
+total patterns: 6 
+total segments: 38 
+total cost: 11188 
+==================================
+gyx@gyx-virtual-machine:~/Desktop/autoplait$ 
+
