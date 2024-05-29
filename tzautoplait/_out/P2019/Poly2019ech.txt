@@ -1,0 +1,69 @@
+gyx@gyx-virtual-machine:~/Desktop$ cd ./autoplait
+gyx@gyx-virtual-machine:~/Desktop/autoplait$ bash demo.sh
+rm -rf core *.o *~ autoplait  ./_out/dat_tmp/
+gcc -g   -c -o autoplait.o autoplait.c
+gcc -g   -c -o plait.o plait.c
+gcc -g   -c -o cps.o cps.c
+gcc -g   -c -o tool.o tool.c
+gcc -g   -c -o nrutil.o nrutil.c
+gcc -g   -c -o viterbi.o viterbi.c
+gcc -g   -c -o hmmutils.o hmmutils.c
+gcc -g   -c -o baum.o baum.c
+gcc -g   -c -o forbackward.o forbackward.c
+gcc -g   -c -o kmeans.o kmeans.c
+gcc -g   -c -o segbox.o segbox.c
+gcc -o autoplait \
+autoplait.o plait.o cps.o tool.o nrutil.o \
+viterbi.o hmmutils.o \
+baum.o forbackward.o kmeans.o segbox.o \
+-lm
+----------------------
+mocap and googleTrend
+----------------------
+loading...
+load dataset... 
+file: ./Poly2019/ech_txt/830.txt (len=8760)
+duration:  8760
+dimension: 3
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 54116 
+2 3 45136 
+3 4 42037 
+4 5 40851 
+4 5 40851 
+5 6 40499 
+6 9 40778 
+6 9 40778 
+6 9 40778 
+6 9 40778 
+7 11 41047 
+8 14 40844 
+9 14 41288 
+9 14 41288 
+9 14 41288 
+9 14 41288 
+10 15 41840 
+10 15 41840 
+10 15 41840 
+11 17 41420 
+12 18 41709 
+12 18 41709 
+13 18 42390 
+13 18 42390 
+13 18 42390 
+13 18 42390 
+==================================
+duration: 8760
+search time: 18.30255500 sec.
+total patterns: 13 
+total segments: 18 
+total cost: 42390 
+==================================
+gyx@gyx-virtual-machine:~/Desktop/autoplait$ 
+
