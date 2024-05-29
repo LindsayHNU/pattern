@@ -1,0 +1,323 @@
+gyx@gyx-virtual-machine:~/Desktop$ cd ./autoplait
+gyx@gyx-virtual-machine:~/Desktop/autoplait$ bash demo.sh
+rm -rf core *.o *~ autoplait  ./_out/dat_tmp/
+gcc -g   -c -o autoplait.o autoplait.c
+gcc -g   -c -o plait.o plait.c
+gcc -g   -c -o cps.o cps.c
+gcc -g   -c -o tool.o tool.c
+gcc -g   -c -o nrutil.o nrutil.c
+gcc -g   -c -o viterbi.o viterbi.c
+gcc -g   -c -o hmmutils.o hmmutils.c
+gcc -g   -c -o baum.o baum.c
+gcc -g   -c -o forbackward.o forbackward.c
+gcc -g   -c -o kmeans.o kmeans.c
+gcc -g   -c -o segbox.o segbox.c
+gcc -o autoplait \
+autoplait.o plait.o cps.o tool.o nrutil.o \
+viterbi.o hmmutils.o \
+baum.o forbackward.o kmeans.o segbox.o \
+-lm
+----------------------
+mocap and googleTrend
+----------------------
+loading...
+load dataset... 
+file: ./West2019/ec_txt/900.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 36120 
+2 5 31630 
+3 7 29946 
+4 7 29180 
+4 7 29180 
+4 7 29180 
+4 7 29180 
+4 7 29180 
+==================================
+duration: 8760
+search time: 26.13103100 sec.
+total patterns: 4 
+total segments: 7 
+total cost: 29180 
+==================================
+loading...
+load dataset... 
+file: ./West2019/ec_txt/901.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 36119 
+2 6 30552 
+3 6 30507 
+3 6 30507 
+4 7 30632 
+4 7 30632 
+4 7 30632 
+5 10 27782 
+6 11 27060 
+7 14 27427 
+7 14 27427 
+7 14 27427 
+8 30 27160 
+8 30 27160 
+8 30 27160 
+9 47 27603 
+9 47 27603 
+9 47 27603 
+==================================
+duration: 8760
+search time: 23.81316700 sec.
+total patterns: 9 
+total segments: 47 
+total cost: 27603 
+==================================
+loading...
+load dataset... 
+file: ./West2019/ec_txt/903.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 32326 
+2 5 24067 
+3 7 21912 
+4 8 21800 
+4 8 21800 
+4 8 21800 
+4 8 21800 
+5 12 21576 
+5 12 21576 
+6 22 21472 
+6 22 21472 
+7 43 21879 
+7 43 21879 
+7 43 21879 
+==================================
+duration: 8760
+search time: 21.88564400 sec.
+total patterns: 7 
+total segments: 43 
+total cost: 21879 
+==================================
+loading...
+load dataset... 
+file: ./West2019/ec_txt/904.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 36037 
+2 3 29238 
+3 5 27426 
+4 6 27542 
+4 6 27542 
+4 6 27542 
+4 6 27542 
+4 6 27542 
+==================================
+duration: 8760
+search time: 22.65945500 sec.
+total patterns: 4 
+total segments: 6 
+total cost: 27542 
+==================================
+loading...
+load dataset... 
+file: ./West2019/ec_txt/905A.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 29255 
+2 5 20822 
+3 9 16396 
+4 13 15111 
+5 17 15153 
+5 17 15153 
+5 17 15153 
+5 17 15153 
+6 24 15411 
+6 24 15411 
+6 24 15411 
+7 32 14104 
+8 34 14569 
+8 34 14569 
+8 34 14569 
+9 36 14727 
+9 36 14727 
+9 36 14727 
+==================================
+duration: 8760
+search time: 16.55316500 sec.
+total patterns: 9 
+total segments: 36 
+total cost: 14727 
+==================================
+loading...
+load dataset... 
+file: ./West2019/ec_txt/905B.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 34110 
+2 3 25522 
+3 4 25442 
+4 6 25175 
+4 6 25175 
+5 8 25362 
+6 10 24866 
+6 10 24866 
+6 10 24866 
+6 10 24866 
+6 10 24866 
+7 11 23703 
+8 12 24052 
+9 14 24525 
+9 14 24525 
+9 14 24525 
+9 14 24525 
+10 15 24933 
+11 16 25363 
+11 16 25363 
+11 16 25363 
+11 16 25363 
+==================================
+duration: 8760
+search time: 22.77097800 sec.
+total patterns: 11 
+total segments: 16 
+total cost: 25363 
+==================================
+loading...
+load dataset... 
+file: ./West2019/ec_txt/906.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 36120 
+2 5 28433 
+3 7 25726 
+4 44 24293 
+4 44 24293 
+4 44 24293 
+5 66 23785 
+5 66 23785 
+5 66 23785 
+6 96 22803 
+7 97 22743 
+7 97 22743 
+7 97 22743 
+7 97 22743 
+==================================
+duration: 8760
+search time: 20.86025900 sec.
+total patterns: 7 
+total segments: 97 
+total cost: 22743 
+==================================
+loading...
+load dataset... 
+file: ./West2019/ec_txt/915.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 36120 
+2 4 31854 
+3 6 31581 
+4 8 30816 
+4 8 30816 
+5 9 30679 
+5 9 30679 
+6 10 30793 
+6 10 30793 
+6 10 30793 
+6 10 30793 
+7 10 30863 
+7 10 30863 
+8 11 30991 
+8 11 30991 
+8 11 30991 
+==================================
+duration: 8760
+search time: 30.90539700 sec.
+total patterns: 8 
+total segments: 11 
+total cost: 30991 
+==================================
+loading...
+load dataset... 
+file: ./West2019/ec_txt/917.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 31021 
+2 5 24927 
+3 8 23412 
+4 9 22905 
+4 9 22905 
+4 9 22905 
+5 11 23133 
+5 11 23133 
+5 11 23133 
+5 11 23133 
+==================================
+duration: 8760
+search time: 28.64612800 sec.
+total patterns: 5 
+total segments: 11 
+total cost: 23133 
+==================================
+gyx@gyx-virtual-machine:~/Desktop/autoplait$ 
+
