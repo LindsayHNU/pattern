@@ -1,0 +1,9 @@
+./Downtown2019/e_txt/152A.txt
+./Downtown2019/e_txt/152B.txt
+./Downtown2019/e_txt/152C.txt
+./Downtown2019/e_txt/152D.txt
+./Downtown2019/e_txt/152E.txt
+./Downtown2019/e_txt/152F.txt
+./Downtown2019/e_txt/302.txt
+./Downtown2019/e_txt/307.txt
+./Downtown2019/e_txt/308.txt
