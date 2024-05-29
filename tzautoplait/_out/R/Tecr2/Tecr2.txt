@@ -1,0 +1,125 @@
+gyx@gyx-virtual-machine:~/Desktop$ cd ./autoplait
+gyx@gyx-virtual-machine:~/Desktop/autoplait$ bash demo.sh
+rm -rf core *.o *~ autoplait  ./_out/dat_tmp/
+gcc -g   -c -o autoplait.o autoplait.c
+gcc -g   -c -o plait.o plait.c
+gcc -g   -c -o cps.o cps.c
+gcc -g   -c -o tool.o tool.c
+gcc -g   -c -o nrutil.o nrutil.c
+gcc -g   -c -o viterbi.o viterbi.c
+gcc -g   -c -o hmmutils.o hmmutils.c
+gcc -g   -c -o baum.o baum.c
+gcc -g   -c -o forbackward.o forbackward.c
+gcc -g   -c -o kmeans.o kmeans.c
+gcc -g   -c -o segbox.o segbox.c
+gcc -o autoplait \
+autoplait.o plait.o cps.o tool.o nrutil.o \
+viterbi.o hmmutils.o \
+baum.o forbackward.o kmeans.o segbox.o \
+-lm
+----------------------
+mocap and googleTrend
+----------------------
+loading...
+load dataset... 
+file: ./Temp2019/ec_txt/10E.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 36120 
+2 3 30211 
+2 3 30211 
+2 3 30211 
+==================================
+duration: 8760
+search time: 20.26095600 sec.
+total patterns: 2 
+total segments: 3 
+total cost: 30211 
+==================================
+loading...
+load dataset... 
+file: ./Temp2019/ec_txt/14A.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 30771 
+2 2 25386 
+3 6 19215 
+4 9 16547 
+5 9 15045 
+6 11 14315 
+6 11 14315 
+7 12 14621 
+7 12 14621 
+7 12 14621 
+8 12 14204 
+9 13 14447 
+9 13 14447 
+9 13 14447 
+9 13 14447 
+9 13 14447 
+10 15 14810 
+10 15 14810 
+11 15 15334 
+11 15 15334 
+11 15 15334 
+12 17 14659 
+12 17 14659 
+12 17 14659 
+==================================
+duration: 8760
+search time: 42.55798700 sec.
+total patterns: 12 
+total segments: 17 
+total cost: 14659 
+==================================
+loading...
+load dataset... 
+file: ./Temp2019/ec_txt/31.txt (len=8760)
+duration:  8760
+dimension: 2
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 35520 
+2 3 29234 
+3 4 28803 
+3 4 28803 
+3 4 28803 
+4 5 26786 
+5 5 25693 
+6 7 25536 
+6 7 25536 
+7 8 25634 
+8 8 25878 
+8 8 25878 
+8 8 25878 
+8 8 25878 
+8 8 25878 
+8 8 25878 
+==================================
+duration: 8760
+search time: 40.99323800 sec.
+total patterns: 8 
+total segments: 8 
+total cost: 25878 
+==================================
+gyx@gyx-virtual-machine:~/Desktop/autoplait$ 
+
