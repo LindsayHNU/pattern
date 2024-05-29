@@ -1,0 +1,2 @@
+./Downtown2019/ec_txt/304.txt
+./Downtown2019/ec_txt/305.txt
