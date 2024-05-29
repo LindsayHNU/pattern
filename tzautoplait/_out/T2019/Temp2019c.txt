@@ -1,0 +1,53 @@
+gyx@gyx-virtual-machine:~/Desktop$ cd ./autoplait 
+gyx@gyx-virtual-machine:~/Desktop/autoplait$ bash demo.sh
+rm -rf core *.o *~ autoplait  ./_out/dat_tmp/
+gcc -g   -c -o autoplait.o autoplait.c
+gcc -g   -c -o plait.o plait.c
+gcc -g   -c -o cps.o cps.c
+gcc -g   -c -o tool.o tool.c
+gcc -g   -c -o nrutil.o nrutil.c
+gcc -g   -c -o viterbi.o viterbi.c
+gcc -g   -c -o hmmutils.o hmmutils.c
+gcc -g   -c -o baum.o baum.c
+gcc -g   -c -o forbackward.o forbackward.c
+gcc -g   -c -o kmeans.o kmeans.c
+gcc -g   -c -o segbox.o segbox.c
+gcc -o autoplait \
+autoplait.o plait.o cps.o tool.o nrutil.o \
+viterbi.o hmmutils.o \
+baum.o forbackward.o kmeans.o segbox.o \
+-lm
+----------------------
+mocap and googleTrend
+----------------------
+loading...
+load dataset... 
+file: ./Temp2019/c_txt/57MF.txt (len=8760)
+duration:  8760
+dimension: 1
+Z-normalization... 
+memory allocation...
+alloc cut point search...(k:24,len:8760)
+start autoplait...
+---------
+r|m|Cost 
+---------
+1 1 15741 
+2 4 7069 
+3 8 4287 
+4 9 3498 
+4 9 3498 
+4 9 3498 
+5 11 3479 
+5 11 3479 
+5 11 3479 
+5 11 3479 
+==================================
+duration: 8760
+search time: 2.61611100 sec.
+total patterns: 5 
+total segments: 11 
+total cost: 3479 
+==================================
+gyx@gyx-virtual-machine:~/Desktop/autoplait$ 
+
